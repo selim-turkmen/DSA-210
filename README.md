@@ -100,7 +100,7 @@ I'll utilize the following tools and technologies throughout this project for co
 - Analyze the impact of economic fluctuations on crime.
 - Forecast future crime rates using statistical methods based on economic data.
 
-6 .### Visualization and Reporting
+6. ### Visualization and Reporting
 
 - Create detailed visualizations such as scatter plots, heatmaps, and time series graphs.
 - Summarize key findings and insights in a structured report.
