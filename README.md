@@ -81,7 +81,7 @@ I utilized the following tools and technologies throughout this project for data
 - Formulate and test hypotheses:
   - **H₀:** There is a correlation between fat and protein consumption quantities and IQ.
   - **Hᵢ:** There is no correlation between fat and protein consumption quantities and IQ.
-- Applied Pearson correlation and p-value calculations.
+- Applied Pearson correlation and p-value calculations. I choosed Pearson Correlaiton since I observed a linearity in the visualised data.
 
 4. ### Regression Modeling
 
