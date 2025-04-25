@@ -72,10 +72,9 @@ I utilized the following tools and technologies throughout this project for data
 
 2. ### Exploratory Data Analysis
 
-- Analyze trends in crime and economic indicators over time across different regions.
-- Visualize distributions of crime types and economic factors.
-- Identify correlations between key economic variables and crime rates.
-- Assess regional disparities in crime based on economic conditions.
+- Visualized distributions of IQ, protein, and fat consumption.
+- Created scatter plots and histograms to explore bivariate relationships.
+- Assessed the linearity and outliers between variables.
 
 3. ### Hypothesis Testing
 
