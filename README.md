@@ -78,10 +78,14 @@ I utilized the following tools and technologies throughout this project for data
 
 3. ### Hypothesis Testing
 
-- Formulate and test hypotheses:
-  - **H₀:** There is a correlation between fat and protein consumption quantities and IQ.
-  - **Hᵢ:** There is no correlation between fat and protein consumption quantities and IQ.
-- Applied Pearson correlation and p-value calculations. I choosed Pearson Correlaiton since I observed a linearity in the visualised data.
+– Formulated and tested the following hypotheses for nutrient intake vs IQ:
+
+- **H₀:** There is no linear correlation between nutrient intake (protein or fat) and IQ.  
+- **H₁:** There is a linear correlation between nutrient intake (protein or fat) and IQ.
+
+– Applied Pearson correlation and p-value calculations to assess the strength and significance of the relationships.
+
+> *Note:* Pearson correlation tests only for linear relationships. While strong linear trends were observed visually, possible non-linear effects were considered out of scope for this stage.
 
 4. ### Regression Modeling
 
@@ -104,28 +108,25 @@ I utilized the following tools and technologies throughout this project for data
 
 ## Example Analysis
 
-As an example, I created scatter plots to visualize the relationship between protein and fat consumption and average IQ. The plots showed a generally positive trend, with higher protein intake associated with higher IQ levels. Fat consumption showed a weaker but still noticeable trend.
+As an example, I created scatter plots to visualize the relationship between protein and fat consumption and average IQ.  
+The plots showed a generally positive trend: higher protein and fat intake levels were both associated with higher average IQ.  
 
-To test the relationship, I conducted a correlation analysis and used the following hypotheses:
+To test these relationships, I conducted a Pearson correlation analysis with the following hypotheses:
 
-- **H₀:** There is a correlation between fat and protein consumption quantities and IQ.
-- **Hᵢ:** There is no correlation between fat and protein consumption quantities and IQ.
+- **H₀:** There is no linear correlation between nutrient intake (protein or fat) and IQ.  
+- **H₁:** There is a linear correlation between nutrient intake (protein or fat) and IQ.
 
-Since the results did not provide strong enough evidence to reject the null hypothesis, I concluded that a correlation likely exists, especially between protein intake and IQ.
+Since the Pearson correlation coefficients for both protein and fat were positive and statistically significant (p < 0.001),  
+we rejected the null hypothesis and concluded that a meaningful linear correlation likely exists in both cases.
+
+> *Note:* Pearson correlation only captures linear relationships; nonlinear patterns, if any, are not addressed in this analysis.
 
 Additionally, a 3D regression plot helped visualize the combined effect of both nutrients.
 
 ## Conclusion
 
-This project explored whether there is a correlation between countries’ average IQ levels and their daily per capita consumption of protein and fat.
+This analysis explored the relationship between national average IQ levels and macronutrient intake, focusing on daily per capita protein and fat consumption. Both nutrients demonstrated statistically significant and moderately strong positive linear correlations with IQ. Pearson correlation coefficients and multiple linear regression models consistently supported this relationship, without indicating a dominant effect from either nutrient.
 
-Key insights include:
+While protein and fat exhibited slightly different effect sizes, both contributed meaningfully to the variance in IQ. Importantly, no claim was made regarding causality or superiority of one nutrient over the other. The findings suggest that overall dietary macronutrient availability may play a role in shaping cognitive performance at a national level.
 
-- Is there a measurable relationship between countries’ **protein and fat consumption** and their **average IQ levels**?
-- Which nutrient shows a stronger correlation with IQ: protein or fat?
-- Can **simple regression models** help explain national differences in cognitive performance?
-- What insights can be drawn to inform future research or health and education policies?
-
-The findings indicate that protein consumption shows a statistically significant correlation with IQ, while fat consumption appears to have a weaker but noticeable link. This suggests that dietary habits may influence cognitive outcomes at a population level.
-
-In the next phase, I will begin applying machine learning methods to predict IQ based on nutritional and socioeconomic features, aiming to reveal deeper patterns beyond traditional analysis.
+Future work may involve expanding the model to include additional dietary factors (e.g., micronutrients, caloric intake), socioeconomic variables (e.g., education, GDP per capita), or machine learning methods to capture potential nonlinearities. Nonetheless, the current study provides a clear, interpretable foundation for understanding how basic nutrition metrics relate to cognitive capacity across countries.
